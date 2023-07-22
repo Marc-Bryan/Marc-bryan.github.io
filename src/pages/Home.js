@@ -8,12 +8,12 @@ function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, My Name is Pedro</h2>
+        <h2> Hi, My Name is Marc Bryan Mata</h2>
         <div className="prompt">
-          <p>A software developer with a passion for learning and creating.</p>
-          <LinkedInIcon />
-          <EmailIcon />
-          <GithubIcon />
+          <p>A web developer with both front-end and back-end experience.</p>
+          <a href="https://www.linkedin.com/in/marc-bryan-mata-aa7651241/" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
+          <a href="mailto:marc.bryan609@gmail.com"><EmailIcon /></a>
+          <a href="https://marc-bryan.github.io/" target="_blank" rel="noopener noreferrer"><GithubIcon /></a>
         </div>
       </div>
       <div className="skills">
@@ -22,21 +22,25 @@ function Home() {
           <li className="item">
             <h2> Front-End</h2>
             <span>
-              ReactJS, Angular, Redux, HTML, CSS, React Native, Flutter, NPM,
-              Ionic, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+              ReactJS, Redux, HTML, CSS, React Native, NPM,
+              BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
             </span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
             <span>
-              NodeJS, Java Spring, .NET, ExpressJS, GraphQL, ApolloServer,
-              MySQL, MongoDB, DynamoDB, DigitalOcean, AWS S3, MS SQL
+              NodeJS, Next.js, ExpressJS, MySQL, MongoDB, MS SQL, PostgreSQL
             </span>
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
+            <span>JavaScript, TypeScript, PHP</span>
           </li>
+          <li className="item">
+            <h2>Soft Skills</h2>
+            <span>Problem Solving<br/> Troubleshooting<br/> Strong Communication<br/> Interpersonal Communication<br/>  Recods Management <br/> Teamwork<br/> Conflict Resolution <br/> Leadership </span>
+          </li>
+          
         </ol>
       </div>
     </div>
