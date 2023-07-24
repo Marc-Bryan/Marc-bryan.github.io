@@ -26,6 +26,7 @@ export const ProjectList = [
   {
     name: "Blog Website",
     image: Proj4,
-    skills: "Javascript, HTML, CSS, PHP, WordPress",
+    skills: "Javascript, HTML, CSS, PHP, Wix",
+    link:"https://marcbryan609.wixsite.com/fina3023"
   },
 ];
