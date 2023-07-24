@@ -7,9 +7,10 @@ import Proj6 from "../assets/proj6.png";
 
 export const ProjectList = [
   {
-    name: "Dijkstra Algorithm Visualizer",
+    name: "Resume",
     image: Proj1,
-    skills: "JavaScript,HTML,CSS",
+    skills: "HTML,CSS",
+    link: "https://marc-bryan.github.io/resume/",
   },
   {
     name: "Ecommerce Website",
@@ -17,23 +18,14 @@ export const ProjectList = [
     skills: "React,Node.js,MongoDB",
   },
   {
-    name: "Spotify Clone",
+    name: "News Website Front-Page",
     image: Proj3,
-    skills: "React,Node.js,MongoDB,SpotifyAPI",
+    skills: "Javascript, HTML, CSS",
+    link:"https://marc-bryan.github.io/News_Paper/",
   },
   {
-    name: "Social Media Website",
+    name: "Blog Website",
     image: Proj4,
-    skills: "React,Node.js,MySQL,GraphQL",
-  },
-  {
-    name: "Dashboard Visualizer",
-    image: Proj5,
-    skills: "JavaScript,HTML,CSS",
-  },
-  {
-    name: "Mobile Game",
-    image: Proj6,
-    skills: "React Native,JavaScript,HTML,CSS",
+    skills: "Javascript, HTML, CSS, PHP, WordPress",
   },
 ];
