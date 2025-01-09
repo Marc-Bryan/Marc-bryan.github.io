@@ -12,7 +12,7 @@ function Footer() {
         <FacebookIcon />
         <a href="https://www.linkedin.com/in/marc-bryan-mata-aa7651241/" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
       </div>
-      <p> &copy; 2023 Bryan Mata</p>
+      <p> &copy; 2025 Bryan Mata</p>
     </div>
   );
 }

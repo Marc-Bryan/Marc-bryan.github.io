@@ -2,7 +2,7 @@ import Proj1 from "../assets/proj1.jpg";
 import Proj2 from "../assets/proj2.jpg";
 import Proj3 from "../assets/proj3.webp";
 import Proj4 from "../assets/proj4.webp";
-//import Proj5 from "../assets/proj5.jpg";
+import Proj5 from "../assets/proj5.jpg";
 //import Proj6 from "../assets/proj6.png";
 
 export const ProjectList = [
@@ -15,18 +15,25 @@ export const ProjectList = [
   {
     name: "Ecommerce Website",
     image: Proj2,
-    skills: "React,Node.js,MongoDB",
+    skills: "Shopify",
+    link: "https://minimall.ph",
   },
   {
-    name: "News Website Front-Page",
+    name: "News Website",
     image: Proj3,
-    skills: "Javascript, HTML, CSS",
-    link:"https://marc-bryan.github.io/News_Paper/",
+    skills: "React, Typescript, Laravel, Mysql",
+    link:"https://pulpmagazine.com",
   },
   {
     name: "Blog Website",
     image: Proj4,
-    skills: "Javascript, HTML, CSS, PHP, Wix",
+    skills: "Wix",
     link:"https://marcbryan609.wixsite.com/fina3023"
+  },
+  {
+    name: "Raffle Website",
+    image: Proj5,
+    skills: "React, Tailwind, Laravel, Typescript",
+    link:"https://raffle.pulp.ph"
   },
 ];

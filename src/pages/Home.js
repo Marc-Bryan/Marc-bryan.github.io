@@ -23,18 +23,18 @@ function Home() {
             <h2> Front-End</h2>
             <span>
               ReactJS, Redux, HTML, CSS, React Native, NPM,
-              BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+              BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents, Vue
             </span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
             <span>
-              NodeJS, Next.js, ExpressJS, MySQL, MongoDB, MS SQL, PostgreSQL
+              Laravel, NodeJS, Next.js, ExpressJS, MySQL, MongoDB, MS SQL, PostgreSQL 
             </span>
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span>JavaScript, TypeScript, PHP</span>
+            <span>JavaScript, TypeScript, PHP, HTML, SQL</span>
           </li>
           <li className="item">
             <h2>Soft Skills</h2>
