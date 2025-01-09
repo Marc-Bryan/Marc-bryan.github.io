@@ -12,67 +12,6 @@ function Experience() {
   return (
     <>
       <div className="experience">
-        <VerticalTimeline lineColor="#3e497a">
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2008 - 2012"
-            iconStyle={{ background: "#3e497a", color: "#fff" }}
-            icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              La Consolacion College, Caloocan
-            </h3>
-            <p> High School Diploma</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2012 - 2017"
-            iconStyle={{ background: "#3e497a", color: "#fff" }}
-            icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Polytechnic University of the Philippines, San Juan
-            </h3>
-
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor's Degree
-            </h4>
-
-            <p> Business Administration</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2017 - 2018"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Web Developer - Alpha Ran Private Server
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Cebu, Philippines
-            </h4>
-            <p>Deploy/Maintain/Add functions to control panel</p>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="Jan 2023 - July 2023"
-            iconStyle={{ background: "#3e497a", color: "#fff" }}
-            icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Web Developer Course
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Refocus Digital Academy
-            </h4>
-            <p>
-              Upskill in HTML, CSS/Bootstrap/Tailwind, Javascript/React/Node, PostgreSQL
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
-      </div>
       <h1 className="nondev"> Dev Experience</h1>
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
@@ -145,6 +84,68 @@ function Experience() {
           </VerticalTimelineElement>
 
 
+        </VerticalTimeline>
+      </div>
+
+        <VerticalTimeline lineColor="#3e497a">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2008 - 2012"
+            iconStyle={{ background: "#3e497a", color: "#fff" }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              La Consolacion College, Caloocan
+            </h3>
+            <p> High School Diploma</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2012 - 2017"
+            iconStyle={{ background: "#3e497a", color: "#fff" }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Polytechnic University of the Philippines, San Juan
+            </h3>
+
+            <h4 className="vertical-timeline-element-subtitle">
+              Bachelor's Degree
+            </h4>
+
+            <p> Business Administration</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2017 - 2018"
+            iconStyle={{ background: "#e9d35b", color: "#fff" }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Web Developer - Alpha Ran Private Server
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Cebu, Philippines
+            </h4>
+            <p>Deploy/Maintain/Add functions to control panel</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="Jan 2023 - July 2023"
+            iconStyle={{ background: "#3e497a", color: "#fff" }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Web Developer Course
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Refocus Digital Academy
+            </h4>
+            <p>
+              Upskill in HTML, CSS/Bootstrap/Tailwind, Javascript/React/Node, PostgreSQL
+            </p>
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
     </>
