@@ -1,46 +1,51 @@
 import React from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
+
+import { aboutInfo, skills } from "../helpers/HomeData";
 
 function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, My Name is Marc Bryan Mata</h2>
+        <h2> Hi, My Name is {aboutInfo.name}</h2>
         <div className="prompt">
-          <p>A web developer with both front-end and back-end experience.</p>
-          <a href="https://www.linkedin.com/in/marc-bryan-mata-aa7651241/" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
-          <a href="mailto:marc.bryan609@gmail.com"><EmailIcon /></a>
-          <a href="https://marc-bryan.github.io/" target="_blank" rel="noopener noreferrer"><GithubIcon /></a>
+          <p>{aboutInfo.description}</p>
+          {aboutInfo.contacts.map((c, idx) => {
+            const Icon = c.icon;
+            return (
+              <a
+                key={idx}
+                href={c.href}
+                {...(c.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
+                <Icon />
+              </a>
+            );
+          })}
         </div>
       </div>
       <div className="skills">
         <h1> Skills</h1>
         <ol className="list">
-          <li className="item">
-            <h2> Front-End</h2>
-            <span>
-              ReactJS, Redux, HTML, CSS, React Native, NPM,
-              BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents, Vue
-            </span>
-          </li>
-          <li className="item">
-            <h2>Back-End</h2>
-            <span>
-              Laravel, NodeJS, Next.js, ExpressJS, MySQL, MongoDB, MS SQL, PostgreSQL 
-            </span>
-          </li>
-          <li className="item">
-            <h2>Languages</h2>
-            <span>JavaScript, TypeScript, PHP, HTML, SQL</span>
-          </li>
-          <li className="item">
-            <h2>Soft Skills</h2>
-            <span>Problem Solving<br/> Troubleshooting<br/> Strong Communication<br/> Interpersonal Communication<br/>  Recods Management <br/> Teamwork<br/> Conflict Resolution <br/> Leadership </span>
-          </li>
-          
+          {skills.map((section, idx) => (
+            <li key={idx} className="item">
+              <h2>{section.category}</h2>
+              <span>
+                {section.items.map((it, i) => (
+                  <React.Fragment key={i}>
+                    {it}
+                    {i < section.items.length - 1
+                      ? section.breakLines
+                        ? <br />
+                        : ", "
+                      : null}
+                  </React.Fragment>
+                ))}
+              </span>
+            </li>
+          ))}
         </ol>
       </div>
     </div>
