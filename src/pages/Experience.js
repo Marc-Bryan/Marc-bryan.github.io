@@ -16,7 +16,7 @@ function Experience() {
   return (
     <>
       <div className="experience">
-        <h1 className="nondev"> Dev Experience</h1>
+        <h1 className="nondev"> IT Experience</h1>
         <VerticalTimeline lineColor="#3e497a">
           {devExperience.map((exp, idx) => (
             <ExperienceItem
@@ -32,7 +32,7 @@ function Experience() {
           ))}
         </VerticalTimeline>
 
-        <h1 className="nondev"> Non Dev Experience</h1>
+        <h1 className="nondev"> Non IT Experience</h1>
         <div className="experience">
           <VerticalTimeline lineColor="#3e497a">
             {nonDevExperience.map((exp, idx) => (
