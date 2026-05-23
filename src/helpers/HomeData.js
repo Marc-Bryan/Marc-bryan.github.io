@@ -10,7 +10,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 
 export const aboutInfo = {
   name: "Marc Bryan Mata",
-  description: "A software engineer with both front-end and back-end experience.",
+  description: "Senior Software Engineer | Technical SEO Manager | IT Head with expertise in full-stack development, Project Management and Technical SEO Management.",
   contacts: [
     {
       href: "https://www.linkedin.com/in/marc-bryan-mata-aa7651241/",
@@ -72,6 +72,10 @@ export const skills = [
     items: ["JavaScript", "TypeScript", "PHP", "HTML", "SQL", "CSS"],
   },
   {
+    category: "Search/Answer/Generative Engine Optimization (SEO, AEO, GEO)",
+    items: ["Google Search Console", "Google Analytics", "Ahrefs", "SEMRush", "Screaming Frog"],
+  },
+  {
     category: "Soft Skills",
     items: [
       "Problem Solving",
@@ -83,6 +87,6 @@ export const skills = [
       "Conflict Resolution",
       "Leadership",
     ],
-    breakLines: true,
+    breakLines: false,
   },
 ];

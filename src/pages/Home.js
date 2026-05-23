@@ -7,23 +7,25 @@ function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, My Name is {aboutInfo.name}</h2>
+        <h2>{aboutInfo.name}</h2>
         <div className="prompt">
           <p>{aboutInfo.description}</p>
-          {aboutInfo.contacts.map((c, idx) => {
-            const Icon = c.icon;
-            return (
-              <a
-                key={idx}
-                href={c.href}
-                {...(c.external
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : {})}
-              >
-                <Icon />
-              </a>
-            );
-          })}
+          <div className="contact-container">
+            {aboutInfo.contacts.map((c, idx) => {
+              const Icon = c.icon;
+              return (
+                <a
+                  key={idx}
+                  href={c.href}
+                  {...(c.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                >
+                  <Icon />
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
       <div className="skills">
@@ -36,11 +38,13 @@ function Home() {
                 {section.items.map((it, i) => (
                   <React.Fragment key={i}>
                     {it}
-                    {i < section.items.length - 1
-                      ? section.breakLines
-                        ? <br />
-                        : ", "
-                      : null}
+                    {i < section.items.length - 1 ? (
+                      section.breakLines ? (
+                        <br />
+                      ) : (
+                        ", "
+                      )
+                    ) : null}
                   </React.Fragment>
                 ))}
               </span>

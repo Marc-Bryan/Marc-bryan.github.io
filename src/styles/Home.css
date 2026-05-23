@@ -34,6 +34,13 @@
   color: white;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 .skills {
   font-size: 35px;
   width: 100%;
