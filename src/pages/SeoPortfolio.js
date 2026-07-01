@@ -1,5 +1,22 @@
 import React from "react";
 import "../styles/SeoPortfolio.css";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+function ScrollToHashElement() {
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      // Remove the '#' to find the exact target ID
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        
+      }
+    }
+  }, [hash]);
+  return null;
+}
 
 const seoCaseStudies = [
   {
@@ -53,7 +70,7 @@ const seoCaseStudies = [
     image: "/seo-screenshots/seo-stock-3.jpg",
     summary:
       "SEO strategy for event-driven content with an emphasis on page performance, relevance, and organic discoverability.",
-    metrics: [
+    metrics: [ 
       { label: "Observed title", value: "PULP Live World | Home Page" },
       { label: "Visible heading count", value: "23" },
       { label: "Visible links", value: "67" },
@@ -71,6 +88,7 @@ const seoCaseStudies = [
 ];
 
 function SeoPortfolio() {
+  ScrollToHashElement();
   return (
     <div className="seo-portfolio">
       <section className="seo-hero">
@@ -85,10 +103,10 @@ function SeoPortfolio() {
           strategy, and clear reporting.
         </p>
         <div className="seo-hero__actions">
-          <a className="seo-btn seo-btn--primary" href="#case-studies">
+          <a  className="seo-btn seo-btn--primary" href="#/SEO-Portfolio#case-studies">
             Explore the work
-          </a>
-        </div>
+          </a> 
+        </div>  
       </section>
 
       <section className="seo-grid">
@@ -111,7 +129,7 @@ function SeoPortfolio() {
             <span className="pill">Analytics &amp; reporting</span>
           </div>
           <p style={{ marginTop: "0.9rem" }}>
-            The goal is always the same: make content easier to find, easier to
+            The goal is always the same: make content easier to fi  nd, easier to
             rank, and easier to convert.
           </p>
         </div>
