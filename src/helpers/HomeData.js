@@ -72,7 +72,7 @@ export const skills = [
     items: ["JavaScript", "TypeScript", "PHP", "HTML", "SQL", "CSS"],
   },
   {
-    category: "Search/Answer/Generative Engine Optimization (SEO, AEO, GEO)",
+    category: "(SEO, AEO, GEO)",
     items: ["Google Search Console", "Google Analytics", "Ahrefs", "SEMRush", "Screaming Frog"],
   },
   {

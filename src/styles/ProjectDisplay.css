@@ -26,3 +26,20 @@
   font-size: 60px;
   color: #3e497a;
 }
+
+/* MEDIA QUERIES 
+  change image to contain only if screen is small
+*/
+@media only screen and (max-width: 800px) {
+.project img {
+  width: 90%;
+  object-fit: contain;
+  padding: auto;
+}
+
+.project a {
+  display: flex;
+  justify-content: center;
+
+}
+}

@@ -10,7 +10,7 @@ function ProjectDisplay() {
   return (
     <div className="project">
       <h1> {project.name}</h1>
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <a href={project.link} target="_blank" rel="noopener noreferrer" className="a_link">
       <img src={project.image} alt="Project" />
       </a>
       <p>
