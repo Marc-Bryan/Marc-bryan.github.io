@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
 .project h1 {
@@ -12,14 +13,28 @@
   color: #3e497a;
   font-size: 35px;
 }
+
 .project img {
   width: 700px;
   border-radius: 10px;
 }
 
-.project p {
-  font-size: 40px;
+.projectDetails {
+  width: min(900px, 90%);
+  margin-top: 24px;
   color: #3e497a;
+}
+
+.projectDetails p,
+.projectDetails li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #3e497a;
+}
+
+.projectDetails ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
 }
 
 .project svg {

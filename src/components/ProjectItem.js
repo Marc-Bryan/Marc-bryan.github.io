@@ -5,17 +5,18 @@ function ProjectItem({ image, name, id, link }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    navigate("/project/" + id);
+
     if (link && link.startsWith("/")) {
       navigate(link);
       return;
     }
 
-    if (link && link.startsWith("http")) {
-      window.open(link, "_blank", "noopener,noreferrer");
-      return;
-    }
+    // if (link && link.startsWith("http")) {
+    //   window.open(link, "_blank", "noopener,noreferrer");
+    //   return;
+    // }
 
-    navigate("/project/" + id);
   };
 
   return (
